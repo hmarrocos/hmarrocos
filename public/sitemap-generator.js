@@ -1,14 +1,14 @@
 module.exports = {
-    siteUrl: "https://yourdomain.com",
+    siteUrl: "https://hmarrocos.vercel.app/",
     generateRobotsTxt: true,
     exclude: ["/en*", "/de*", "/disallowed"],
     alternateRefs: [
       {
-        href: "https://yourdomain.com/en",
+        href: "https://hmarrocos.vercel.app/en",
         hreflang: "en",
       },
       {
-        href: "https://yourdomain.com/de",
+        href: "https://hmarrocos.vercel.app/de",
         hreflang: "de",
       },
     ],
