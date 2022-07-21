@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "start http://localhost:3000 & next dev",
     "lint": "next lint",
-    "postbuild": "node ./scripts/generate-sitemap.mjs",
+    "postbuild": "next-sitemap --config sitemap-generator.js",
     "tsc": "tsc"
   },
   "dependencies": {
