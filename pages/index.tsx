@@ -16,23 +16,22 @@ export default function Home(): JSX.Element {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a>Next.js</a>!
+          Título <a>destaque</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Descrição
         </p>
 
         <div className={styles.grid}>
           <a className={styles.card}>
-            <h2>Documentation</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, accusantium minima officia iusto quos eius magnam officiis cumque adipisci sit numquam possimus neque provident rem sapiente amet atque! Nemo, voluptates.</p>
           </a>
 
           <a className={styles.card}>
-            <h2>Learn</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi harum neque consequatur qui quam, animi, sint mollitia reiciendis, esse cupiditate excepturi? Perspiciatis ab quos veniam voluptatem cumque saepe nemo hic.</p>
           </a>
         </div>
       </main>
@@ -43,7 +42,7 @@ export default function Home(): JSX.Element {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Distribuído por{''}
           <span className={styles.logo}>
             <Image src="/favicon-16x16.png" alt="Marrocos Logo" width={16} height={16} />
           </span>
