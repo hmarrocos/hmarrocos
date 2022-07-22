@@ -18,12 +18,12 @@ export default function Home(): JSX.Element {
       </Head>
 
       <main className={styles.main}>
-        {/* <h1 className={styles.title}>
-          Título <a>destaque</a>
+        <h1 className={styles.title}>
+          Hendriw Marrocos
         </h1>
 
         <p className={styles.description}>
-          Descrição
+        Front-end Web Developer
         </p>
 
         <div className={styles.grid}>
@@ -36,14 +36,14 @@ export default function Home(): JSX.Element {
             <h2>Card 2</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi harum neque consequatur qui quam, animi, sint mollitia reiciendis, esse cupiditate excepturi? Perspiciatis ab quos veniam voluptatem cumque saepe nemo hic.</p>
           </a>
-        </div> */}
+        </div>
 
         <div className="w-full px-4 pt-16">
       <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2">
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-200 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-200 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-300 focus:outline-none focus-visible:ring focus-visible:ring-blue-800 focus-visible:ring-opacity-75">
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                 <ChevronUpIcon
                   className={`${
@@ -60,7 +60,7 @@ export default function Home(): JSX.Element {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-200 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-200 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-300 focus:outline-none focus-visible:ring focus-visible:ring-blue-800 focus-visible:ring-opacity-75">
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                 <ChevronUpIcon
                   className={`${
@@ -85,10 +85,10 @@ export default function Home(): JSX.Element {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Distribuído por{''}
-          <span className={styles.logo}>
+          Distribuído por Marrocos, 2022
+          {/* <span className={styles.logo}>
             <Image src="/favicon-16x16.png" alt="Marrocos Logo" width={16} height={16} />
-          </span>
+          </span> */}
         </a>
       </footer>
     </div>
