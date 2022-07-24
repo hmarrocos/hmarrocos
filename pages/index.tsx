@@ -29,10 +29,7 @@ export default function Home(): JSX.Element {
         <div className={styles.grid}>
           <a className={styles.card}>
             <h2>Olá!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, 
-              accusantium minima officia iusto quos eius magnam officiis cumque 
-              adipisci sit numquam possimus neque provident rem sapiente amet 
-              atque! Nemo, voluptates.</p>
+            <p>teste</p>
           </a>
 
           <a className={styles.card}>
