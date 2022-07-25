@@ -48,7 +48,7 @@ export default function Home(): JSX.Element {
           </a>
         </div>
 
-        <div className="w-full px-4 pt-16">
+        <div className="flex">
       <div className="mx-auto w-full max-w-md rounded-2xl p-2">
         <Disclosure>
           {({ open }) => (
