@@ -34,12 +34,12 @@ export default function Home(): JSX.Element {
                 </a>
                 , e amo o que faço.
               </p>
-              <div className={styles.buttons}>
+              <nav className={styles.buttons}>
                 <button>Sobre mim</button>
                 <button>Competências</button>
                 <button>Projetos</button>
                 <button>Contato</button>
-              </div>
+              </nav>
             </div>
 
             <div className={styles.card}>
