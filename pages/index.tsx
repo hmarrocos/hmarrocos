@@ -42,26 +42,26 @@ export default function Home(): JSX.Element {
           <a className={styles.card}>
             <h2>Sobre mim</h2>
             <p>Tenho 21 anos de idade.</p>
-            <p>Teste 2.</p>
-            <p>Teste 3.</p>
-            <p>Teste 4.</p>
+            <p>Gosto de conhecer pessoas novas, viajar, natureza e explorar o desconhecido.</p>
+            <p>Desde criança lido com tecnologia, sempre buscando por solucionar problemas ou aprender algo novo.</p>
+            <p>Programo há 5 anos, porém na área há 6 meses.</p>
           </a>
         </div>
 
-        <div className="flex">
-      <div className="mx-auto w-full max-w-md rounded-2xl p-2">
+        <div className="flex w-full">
+      <div className="mx-auto w-full max-w-3xl rounded-2xl py-4">
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-2 text-left text-sm font-medium">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-2 text-left text-lg font-medium">
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
-                  } h-5 w-5`}
+                  } h-7 w-7`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eaque libero fugit molestias ipsa cum, vel voluptatibus ad esse soluta. Adipisci cumque beatae est similique doloribus excepturi? Odio, fugit id.
               </Disclosure.Panel>
             </>
@@ -70,15 +70,15 @@ export default function Home(): JSX.Element {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-2 text-left text-sm font-medium">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-2 text-left text-lg font-medium">
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
-                  } h-5 w-5`}
+                  } h-7 w-7`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio obcaecati sint perferendis eligendi, enim tempora voluptatum cupiditate pariatur qui voluptatibus saepe facilis asperiores fuga laboriosam voluptatem odio? Officia, quod nobis!
               </Disclosure.Panel>
             </>
