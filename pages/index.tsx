@@ -224,11 +224,11 @@ export default function Home(): JSX.Element {
                   <div className="flex flex-1 flex-col justify-between overflow-hidden py-2 pr-4">
                     <div className="flex items-center justify-between gap-2">
                       <h4 className="text-lg font-medium flex-1 line-clamp-1">
-                        Teste
+                        Projeto
                       </h4>
                     </div>
                     <p className="text-lg font-light overflow-hidden text-ellipsis whitespace-nowrap">
-                      Teste
+                      Descrição projeto
                     </p>
                   </div>
                 </div>
