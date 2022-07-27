@@ -103,9 +103,38 @@ export default function Home(): JSX.Element {
           <div className={styles.grid}>
             <div className={styles.card}>
               <h2>Competências</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde earum praesentium facilis quibusdam recusandae corporis cupiditate voluptatibus a consectetur fuga accusamus quis reprehenderit, sunt aspernatur voluptas quasi architecto ab.
-              </p>
+              <div className="flex flex-col gap-2">
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/nextjs.png" alt="Next.js"/>
+                  Next.js</div>
+                <div className="flex gap-2">
+                  <img className="self-center h-4" src="/reactjs.png" alt="React.js"/>
+                  React.js</div>
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/ts.png" alt="TypeScript"/>
+                  TypeScript</div>
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/esl.png" alt="ESLint"/>
+                  ESLint</div>
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/twcss.png" alt="Tailwind CSS"/>
+                  Tailwind CSS</div>
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/sass.png" alt="SASS/SCSS"/>
+                  SASS/SCSS</div>
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/seo.png" alt="SEO"/>
+                  Otimização para mecanismos de busca (SEO)</div>
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/mdx.png" alt="MDX"/>
+                  MultiDimensional eXpressions</div>
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/ga.png" alt="Google Analytics"/>
+                  Google Analytics</div>
+                <div className="flex gap-2">
+                  <img className="flex self-center h-4" src="/git.png" alt="Git"/>
+                  Git</div>
+              </div>
             </div>
             <div className={styles.card}>
               <h2>Projetos</h2>
