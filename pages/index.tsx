@@ -35,10 +35,10 @@ export default function Home(): JSX.Element {
                 , e amo o que faço.
               </p>
               <nav className={styles.buttons}>
-                <button>Sobre mim</button>
-                <button>Competências</button>
-                <button>Projetos</button>
-                <button>Contato</button>
+                <button className="whitespace-nowrap rounded-xl text-sky-600 px-4 py-2 font-semibold flex-1 border border-neutral-200" type="button">Sobre mim</button>
+                <button className="whitespace-nowrap rounded-xl text-sky-600 px-4 py-2 font-semibold flex-1 border border-neutral-200" type="button">Competências</button>
+                <button className="whitespace-nowrap rounded-xl text-sky-600 px-4 py-2 font-semibold flex-1 border border-neutral-200" type="button">Projetos</button>
+                <button className="whitespace-nowrap rounded-xl text-sky-600 px-4 py-2 font-semibold flex-1 border border-neutral-200" type="button">Contato</button>
               </nav>
             </div>
 
