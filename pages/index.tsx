@@ -36,25 +36,25 @@ export default function Home(): JSX.Element {
               </p>
               <nav className={styles.buttons}>
                 <button
-                  className="whitespace-nowrap rounded-xl text-sky-600 px-4 py-2 font-semibold flex-1 border border-neutral-200"
+                  className="whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
                   type="button"
                 >
                   Sobre mim
                 </button>
                 <button
-                  className="whitespace-nowrap rounded-xl text-sky-600 px-4 py-2 font-semibold flex-1 border border-neutral-200"
+                  className="whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
                   type="button"
                 >
                   Competências
                 </button>
                 <button
-                  className="whitespace-nowrap rounded-xl text-sky-600 px-4 py-2 font-semibold flex-1 border border-neutral-200"
+                  className="whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
                   type="button"
                 >
                   Projetos
                 </button>
                 <button
-                  className="whitespace-nowrap rounded-xl text-sky-600 px-4 py-2 font-semibold flex-1 border border-neutral-200"
+                  className="whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
                   type="button"
                 >
                   Contato
@@ -75,61 +75,60 @@ export default function Home(): JSX.Element {
               </p>
               <p>Me destaco em várias ferramentas tecnológicas.</p>
             </div>
-          
 
-          <div className="flex w-full">
-            <div className="mx-auto w-full max-w-3xl rounded-2xl py-4">
-              <Disclosure>
-                {({ open }) => (
-                  <>
-                    <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-2 text-left text-xl font-medium">
-                      <span>Formação</span>
-                      <ChevronUpIcon
-                        className={`${
-                          open ? "rotate-180 transform" : ""
-                        } h-7 w-7`}
-                      />
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-xl">
-                      <ul className="flex list-disc flex-col pl-6">
-                        <li>
-                          Bacharel em Engenharia de Biossistemas - Universidade
-                          de São Paulo (2020 - 2025)
-                        </li>
-                        <li>
-                          Técnico em Informática - Escola Técnica Estadual de
-                          São Paulo (2017 - 2019)
-                        </li>
-                      </ul>
-                    </Disclosure.Panel>
-                  </>
-                )}
-              </Disclosure>
-              <Disclosure as="div" className="mt-2">
-                {({ open }) => (
-                  <>
-                    <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-2 text-left text-xl font-medium">
-                      <span>Experiência</span>
-                      <ChevronUpIcon
-                        className={`${
-                          open ? "rotate-180 transform" : ""
-                        } h-7 w-7`}
-                      />
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-xl">
-                      <ul className="flex list-disc flex-col pl-6">
-                        <li>
-                          Gerente de Marketing - Biossistec Jr (jan 2022 - hoje)
-                        </li>
-                      </ul>
-                    </Disclosure.Panel>
-                  </>
-                )}
-              </Disclosure>
+            <div className="flex w-full">
+              <div className="mx-auto w-full max-w-3xl rounded-2xl py-4">
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-2 text-left text-xl font-medium">
+                        <span>Formação</span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-7 w-7`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-xl">
+                        <ul className="flex list-disc flex-col pl-6">
+                          <li>
+                            Bacharel em Engenharia de Biossistemas -
+                            Universidade de São Paulo (2020 - 2025)
+                          </li>
+                          <li>
+                            Técnico em Informática - Escola Técnica Estadual de
+                            São Paulo (2017 - 2019)
+                          </li>
+                        </ul>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure as="div" className="mt-2">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-2 text-left text-xl font-medium">
+                        <span>Experiência</span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-7 w-7`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-xl">
+                        <ul className="flex list-disc flex-col pl-6">
+                          <li>
+                            Gerente de Marketing - Biossistec Jr (jan 2022 -
+                            hoje)
+                          </li>
+                        </ul>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
             </div>
-          </div>
 
-          
             <div className={styles.card}>
               <h2>Competências</h2>
               <hr className="placeholder-black" />
@@ -219,23 +218,99 @@ export default function Home(): JSX.Element {
             <div className={styles.card}>
               <h2>Projetos</h2>
               <hr className="placeholder-black" />
-                <div className="flex gap-4 rounded-xl border relative h-20 cursor-pointer overflow-hidden px-0 py-0">
-                  <img className="h-20 w-20 rounded-xl" src="" alt=""></img>
-                  <div className="flex flex-1 flex-col justify-between overflow-hidden py-2 pr-4">
-                    <div className="flex items-center justify-between gap-2">
-                      <h4 className="text-lg font-medium flex-1 line-clamp-1">
-                        Projeto
+
+              <a
+                href="https://freecodecamp.org/certification/fcc872f5b52-30ee-4772-bd3f-d8ef190b0512/front-end-development-libraries"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex-col rounded-xl border px-4 py-2">
+                  <img
+                    className="h-20 w-20 rounded-xl"
+                    src="/fcc.png"
+                    alt="freeCodeCamp"
+                  ></img>
+                  <div className="flex flex-col py-2">
+                    <div className="flex">
+                      <h4 className="text-lg font-medium flex-1">
+                        Front End Development Libraries
                       </h4>
                     </div>
-                    <p className="text-lg font-light overflow-hidden text-ellipsis whitespace-nowrap">
-                      Descrição projeto
+                    <p className="text-lg font-light">
+                      Concluí com sucesso: Bibliotecas de Desenvolvimento
+                      Front-End, do free Code Camp, representando
+                      aproximadamente 300h de curso.
                     </p>
                   </div>
                 </div>
+              </a>
             </div>
             <div className={styles.card}>
               <h2>Contato</h2>
               <hr className="placeholder-black" />
+              <a
+                href="https://www.linkedin.com/in/hendriw-marrocos"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex gap-4">
+                  <img
+                    className="h-8 flex self-center pl-4"
+                    src="/li.png"
+                    alt="LinkedIn"
+                  ></img>
+                  <div className="flex flex-col">
+                    <div className="flex">
+                      <h4 className="text-lg font-medium flex-1">LinkedIn</h4>
+                    </div>
+                    <p className="text-lg font-light break-all">
+                      linkedin.com/in/hendriw-marrocos
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://github.com/hmarrocos"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex gap-4">
+                  <img
+                    className="h-8 flex self-center pl-4"
+                    src="/gh.png"
+                    alt="GitHub"
+                  ></img>
+                  <div className="flex flex-col">
+                    <div className="flex">
+                      <h4 className="text-lg font-medium flex-1">GitHub</h4>
+                    </div>
+                    <p className="text-lg font-light break-all">
+                      github.com/hmarrocos
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="mailto:tendhendriw_94@hotmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex gap-4">
+                  <img
+                    className="h-8 flex self-center pl-4"
+                    src="/mail.png"
+                    alt="E-mail"
+                  ></img>
+                  <div className="flex flex-col">
+                    <div className="flex">
+                      <h4 className="text-lg font-medium flex-1">E-mail</h4>
+                    </div>
+                    <p className="text-lg font-light break-all">
+                      tendhendriw_94@hotmail.com
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </main>
