@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Header from "./header";
+import Link from 'next/link';
 
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
@@ -19,13 +20,13 @@ export default function Home(): JSX.Element {
         <main className={styles.main}>
           <h1 className={styles.title}>Hendriw Marrocos</h1>
 
-          <p className={styles.description}>Desenvolvedor Web Front-end</p>
+          <p className={styles.description}>Desenvolvedor Web<p>Front-end</p></p>
 
           <div className={styles.grid}>
             <div className={styles.card}>
               <h2>Olá!</h2>
               <p>
-                Sou Desenvolvedor Web de{" "}
+                Tenho 21 anos de idade, sou de{" "}
                 <a
                   href="https://google.com/maps/place/Sao+Paulo"
                   className={styles.code}
@@ -34,35 +35,32 @@ export default function Home(): JSX.Element {
                 </a>
                 , e amo o que faço.
               </p>
-              <nav className={styles.buttons}>
-                <button
-                  className="whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
-                  type="button"
+              
+              <nav className={styles.sections}>
+                <Link href="#sobre"><a
+                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
                 >
                   Sobre mim
-                </button>
-                <button
-                  className="whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
-                  type="button"
+                </a></Link>
+                <Link href="#comp"><a
+                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
                 >
                   Competências
-                </button>
-                <button
-                  className="whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
-                  type="button"
+                </a></Link>
+                <Link href="#proj"><a
+                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
                 >
                   Projetos
-                </button>
-                <button
-                  className="whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
-                  type="button"
+                </a></Link>
+                <Link href="#cont"><a
+                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
                 >
                   Contato
-                </button>
+                </a></Link>
               </nav>
             </div>
 
-            <div className={styles.card}>
+            <div id="sobre" className={styles.card}>
               <h2>Sobre mim</h2>
               <hr className="placeholder-black" />
               <p>
@@ -129,7 +127,7 @@ export default function Home(): JSX.Element {
               </div>
             </div>
 
-            <div className={styles.card}>
+            <div id="comp" className={styles.card}>
               <h2>Competências</h2>
               <hr className="placeholder-black" />
               <div className="flex flex-col gap-2">
@@ -215,7 +213,7 @@ export default function Home(): JSX.Element {
                 </div>
               </div>
             </div>
-            <div className={styles.card}>
+            <div id="proj" className={styles.card}>
               <h2>Projetos</h2>
               <hr className="placeholder-black" />
 
@@ -239,13 +237,13 @@ export default function Home(): JSX.Element {
                     <p className="text-lg font-light">
                       Concluí com sucesso: Bibliotecas de Desenvolvimento
                       Front-End, do free Code Camp, representando
-                      aproximadamente 300h de curso.
+                      aproximadamente 300 horas de curso.
                     </p>
                   </div>
                 </div>
               </a>
             </div>
-            <div className={styles.card}>
+            <div id="cont" className={styles.card}>
               <h2>Contato</h2>
               <hr className="placeholder-black" />
               <a
