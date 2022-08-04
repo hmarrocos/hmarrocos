@@ -38,22 +38,22 @@ export default function Home(): JSX.Element {
               
               <nav className={styles.sections}>
                 <Link href="#sobre"><a
-                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
+                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
                 >
                   Sobre mim
                 </a></Link>
                 <Link href="#comp"><a
-                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
+                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
                 >
                   Competências
                 </a></Link>
                 <Link href="#proj"><a
-                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
+                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
                 >
                   Projetos
                 </a></Link>
                 <Link href="#cont"><a
-                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border border-neutral-200"
+                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
                 >
                   Contato
                 </a></Link>
@@ -62,7 +62,7 @@ export default function Home(): JSX.Element {
 
             <div id="sobre" className={styles.card}>
               <h2>Sobre mim</h2>
-              <hr className="placeholder-black" />
+              <hr className={styles.hr}/>
               <p>
                 Técnico em Informática e aluno de graduação, com habilidades em
                 resolução de problemas.
@@ -129,7 +129,7 @@ export default function Home(): JSX.Element {
 
             <div id="comp" className={styles.card}>
               <h2>Competências</h2>
-              <hr className="placeholder-black" />
+              <hr className={styles.hr} />
               <div className="flex flex-col gap-2">
                 <div className="flex gap-2">
                   <img
@@ -215,14 +215,14 @@ export default function Home(): JSX.Element {
             </div>
             <div id="proj" className={styles.card}>
               <h2>Projetos</h2>
-              <hr className="placeholder-black" />
+              <hr className={styles.hr} />
 
               <a
                 href="https://freecodecamp.org/certification/fcc872f5b52-30ee-4772-bd3f-d8ef190b0512/front-end-development-libraries"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="flex-col rounded-xl border px-4 py-2">
+                <div className="flex-col rounded-xl border-2 px-4 py-2">
                   <img
                     className="h-20 w-20 rounded-xl"
                     src="/fcc.png"
@@ -245,7 +245,7 @@ export default function Home(): JSX.Element {
             </div>
             <div id="cont" className={styles.card}>
               <h2>Contato</h2>
-              <hr className="placeholder-black" />
+              <hr className={styles.hr} />
               <a
                 href="https://www.linkedin.com/in/hendriw-marrocos"
                 target="_blank"
