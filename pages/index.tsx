@@ -30,6 +30,8 @@ export default function Home(): JSX.Element {
                 <a
                   href="https://google.com/maps/place/Sao+Paulo"
                   className={styles.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   São Paulo, Brasil
                 </a>
