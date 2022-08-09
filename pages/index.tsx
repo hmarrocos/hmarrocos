@@ -81,7 +81,7 @@ export default function Home(): JSX.Element {
                 <Disclosure>
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-3 text-left text-xl font-medium">
+                      <Disclosure.Button className="flex w-full justify-between rounded-lg border-2 bg-black px-4 py-3 text-left text-xl font-medium">
                         <span>Formação</span>
                         <ChevronUpIcon
                           className={`${
@@ -107,7 +107,7 @@ export default function Home(): JSX.Element {
                 <Disclosure as="div" className="mt-8">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full justify-between rounded-lg bg-neutral-200 px-4 py-3 text-left text-xl font-medium">
+                      <Disclosure.Button className="flex w-full justify-between rounded-lg border-2 bg-black px-4 py-3 text-left text-xl font-medium">
                         <span>Experiência</span>
                         <ChevronUpIcon
                           className={`${

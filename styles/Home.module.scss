@@ -1,6 +1,5 @@
 .container {
   padding: 0 2rem;
-  background-color: #ffffff80;
 }
 
 .main {
@@ -111,5 +110,14 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
   }
 }
