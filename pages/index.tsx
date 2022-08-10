@@ -39,26 +39,26 @@ export default function Home(): JSX.Element {
               </p>
               
               <nav className={styles.sections}>
-                <Link href="#sobre"><a
+                <Link href="#sobre"><button
                   className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
                 >
                   Sobre mim
-                </a></Link>
-                <Link href="#comp"><a
+                </button></Link>
+                <Link href="#competencias"><button
                   className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
                 >
                   Competências
-                </a></Link>
-                <Link href="#proj"><a
+                </button></Link>
+                <Link href="#projetos"><button
                   className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
                 >
                   Projetos
-                </a></Link>
-                <Link href="#cont"><a
+                </button></Link>
+                <Link href="#contato"><button
                   className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
                 >
                   Contato
-                </a></Link>
+                </button></Link>
               </nav>
             </div>
 
@@ -129,7 +129,7 @@ export default function Home(): JSX.Element {
               </div>
             </div>
 
-            <div id="comp" className={styles.card}>
+            <div id="competencias" className={styles.card}>
               <h2>Competências</h2>
               <hr className={styles.hr} />
               <div className="flex flex-col gap-2">
@@ -215,7 +215,7 @@ export default function Home(): JSX.Element {
                 </div>
               </div>
             </div>
-            <div id="proj" className={styles.card}>
+            <div id="projetos" className={styles.card}>
               <h2>Projetos</h2>
               <hr className={styles.hr} />
 
@@ -296,7 +296,7 @@ export default function Home(): JSX.Element {
               </a>
               
             </div>
-            <div id="cont" className={styles.card}>
+            <div id="contato" className={styles.card}>
               <h2>Contato</h2>
               <hr className={styles.hr} />
               <a
