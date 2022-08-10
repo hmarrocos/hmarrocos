@@ -244,6 +244,57 @@ export default function Home(): JSX.Element {
                   </div>
                 </div>
               </a>
+
+              <a
+                href="https://github.com/hmarrocos/hmarrocos"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex-col rounded-xl border-2 px-4 py-2">
+                  <img
+                    className="h-20 w-20 rounded-xl"
+                    src="/mws.png"
+                    alt="Marrocos website"
+                  ></img>
+                  <div className="flex flex-col py-2">
+                    <div className="flex">
+                      <h4 className="text-lg font-medium flex-1">
+                        Marrocos
+                      </h4>
+                    </div>
+                    <p className="text-lg font-light">
+                      Um site desenhado e desenvolvido exclusivamente para mim, como 
+                      página pessoal ou portfólio para mostrar meus projetos e outras informações.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              
+              <a
+                href="https://github.com/hmarrocos/uikit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex-col rounded-xl border-2 px-4 py-2">
+                  <img
+                    className="h-20 w-20 rounded-xl"
+                    src="/uik.png"
+                    alt="UI Kit"
+                  ></img>
+                  <div className="flex flex-col py-2">
+                    <div className="flex">
+                      <h4 className="text-lg font-medium flex-1">
+                        Marrocos
+                      </h4>
+                    </div>
+                    <p className="text-lg font-light">
+                      Um kit de interface do usuário é com conjunto de 
+                      componentes reutilizáveis, como buttons, inputs, cards, modals, o que você quiser.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              
             </div>
             <div id="cont" className={styles.card}>
               <h2>Contato</h2>
