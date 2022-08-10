@@ -288,7 +288,7 @@ export default function Home(): JSX.Element {
                       </h4>
                     </div>
                     <p className="text-lg font-light">
-                      Um kit de interface do usuário é com conjunto de 
+                      Um kit de interface do usuário com um conjunto de 
                       componentes reutilizáveis, como buttons, inputs, cards, modals, o que você quiser.
                     </p>
                   </div>
