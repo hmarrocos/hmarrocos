@@ -284,7 +284,7 @@ export default function Home(): JSX.Element {
                   <div className="flex flex-col py-2">
                     <div className="flex">
                       <h4 className="text-lg font-medium flex-1">
-                        Marrocos
+                        UI Kit
                       </h4>
                     </div>
                     <p className="text-lg font-light">
