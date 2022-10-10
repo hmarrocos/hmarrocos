@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Header from "./header";
-import Link from 'next/link';
+import Link from "next/link";
 
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
@@ -20,7 +20,9 @@ export default function Home(): JSX.Element {
         <main className={styles.main}>
           <h1 className={styles.title}>Hendriw Marrocos</h1>
 
-          <p className={styles.description}>Desenvolvedor Web<p>Front-end</p></p>
+          <p className={styles.description}>
+            Desenvolvedor Web<p>Front-end</p>
+          </p>
 
           <div className={styles.grid}>
             <div className={styles.card}>
@@ -37,43 +39,46 @@ export default function Home(): JSX.Element {
                 </a>
                 , e amo o que faço.
               </p>
-              
+
               <nav className={styles.sections}>
-                <Link href="#sobre"><button
-                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
-                >
-                  Sobre mim
-                </button></Link>
-                <Link href="#competencias"><button
-                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
-                >
-                  Competências
-                </button></Link>
-                <Link href="#projetos"><button
-                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
-                >
-                  Projetos
-                </button></Link>
-                <Link href="#contato"><button
-                  className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200"
-                >
-                  Contato
-                </button></Link>
+                <Link href="#sobre">
+                  <button className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200">
+                    Sobre mim
+                  </button>
+                </Link>
+                <Link href="#competencias">
+                  <button className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200">
+                    Competências
+                  </button>
+                </Link>
+                <Link href="#projetos">
+                  <button className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200">
+                    Projetos
+                  </button>
+                </Link>
+                <Link href="#contato">
+                  <button className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200">
+                    Contato
+                  </button>
+                </Link>
               </nav>
             </div>
 
             <div id="sobre" className={styles.card}>
               <h2>Sobre mim</h2>
-              <hr className={styles.hr}/>
+              <hr className={styles.hr} />
               <p>
-                Técnico em Informática e aluno de graduação, com habilidades em
-                resolução de problemas.
+                Gosto de explorar, viajar, conhecer pessoas e lugares novos.
               </p>
               <p>
-                Busco estagiar por meio da criatividade, colaboração e aceitação
-                de críticas.
+                Desde criança adoro criar coisas, seja para resolver um problema
+                ou apenas por diversão.
               </p>
-              <p>Me destaco em várias ferramentas tecnológicas.</p>
+              <p>
+                Comecei a programar há cerca de 5 anos com a ideia de
+                desenvolver aplicativos, porém logo em seguida optei por
+                ingressar na área Web.
+              </p>
             </div>
 
             <div className="flex w-full">
@@ -85,7 +90,9 @@ export default function Home(): JSX.Element {
                         <span>Formação</span>
                         <ChevronUpIcon
                           className={`${
-                            open ? "rotate-180 transform" : ""
+                            open
+                              ? "rotate-180 transform transition duration-300"
+                              : "" //!!!
                           } h-7 w-7`}
                         />
                       </Disclosure.Button>
@@ -111,7 +118,9 @@ export default function Home(): JSX.Element {
                         <span>Experiência</span>
                         <ChevronUpIcon
                           className={`${
-                            open ? "rotate-180 transform" : ""
+                            open
+                              ? "rotate-180 transform transition duration-300"
+                              : "" //!!!
                           } h-7 w-7`}
                         />
                       </Disclosure.Button>
@@ -136,10 +145,10 @@ export default function Home(): JSX.Element {
                 <div className="flex gap-2">
                   <img
                     className="flex self-center h-4"
-                    src="/nextjs.png"
-                    alt="Next.js"
+                    src="/js.png"
+                    alt="JavaScript"
                   />
-                  Next.js
+                  JavaScript
                 </div>
                 <div className="flex gap-2">
                   <img
@@ -152,50 +161,10 @@ export default function Home(): JSX.Element {
                 <div className="flex gap-2">
                   <img
                     className="flex self-center h-4"
-                    src="/ts.png"
-                    alt="TypeScript"
-                  />
-                  TypeScript
-                </div>
-                <div className="flex gap-2">
-                  <img
-                    className="flex self-center h-4"
-                    src="/esl.png"
-                    alt="ESLint"
-                  />
-                  ESLint
-                </div>
-                <div className="flex gap-2">
-                  <img
-                    className="flex self-center h-4"
-                    src="/twcss.png"
-                    alt="Tailwind CSS"
-                  />
-                  Tailwind CSS
-                </div>
-                <div className="flex gap-2">
-                  <img
-                    className="flex self-center h-4"
-                    src="/sass.png"
-                    alt="SASS/SCSS"
-                  />
-                  SASS/SCSS
-                </div>
-                <div className="flex gap-2">
-                  <img
-                    className="flex self-center h-4"
                     src="/seo.png"
                     alt="SEO"
                   />
                   Otimização para mecanismos de busca (SEO)
-                </div>
-                <div className="flex gap-2">
-                  <img
-                    className="flex self-center h-4"
-                    src="/mdx.png"
-                    alt="MDX"
-                  />
-                  MultiDimensional eXpressions
                 </div>
                 <div className="flex gap-2">
                   <img
@@ -208,10 +177,82 @@ export default function Home(): JSX.Element {
                 <div className="flex gap-2">
                   <img
                     className="flex self-center h-4"
+                    src="/html.png"
+                    alt="HTML"
+                  />
+                  HTML
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
+                    src="/css.png"
+                    alt="CSS"
+                  />
+                  CSS
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
+                    src="/twcss.png"
+                    alt="Tailwind CSS"
+                  />
+                  Tailwind CSS
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
+                    src="/gh.png"
+                    alt="GitHub"
+                  />
+                  GitHub
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
+                    src="/nodejs.png"
+                    alt="Node.js"
+                  />
+                  Node.js
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
+                    src="/sass.png"
+                    alt="SASS/SCSS"
+                  />
+                  SASS/SCSS
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
+                    src="/nextjs.png"
+                    alt="Next.js"
+                  />
+                  Next.js
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
+                    src="/mdx.png"
+                    alt="MDX"
+                  />
+                  MultiDimensional eXpressions
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
                     src="/git.png"
                     alt="Git"
                   />
                   Git
+                </div>
+                <div className="flex gap-2">
+                  <img
+                    className="flex self-center h-4"
+                    src="/ts.png"
+                    alt="TypeScript"
+                  />
+                  TypeScript
                 </div>
               </div>
             </div>
@@ -258,18 +299,17 @@ export default function Home(): JSX.Element {
                   ></img>
                   <div className="flex flex-col py-2">
                     <div className="flex">
-                      <h4 className="text-lg font-medium flex-1">
-                        Marrocos
-                      </h4>
+                      <h4 className="text-lg font-medium flex-1">Marrocos</h4>
                     </div>
                     <p className="text-lg font-light">
-                      Um site desenhado e desenvolvido exclusivamente para mim, como 
-                      página pessoal ou portfólio para mostrar meus projetos e outras informações.
+                      Um site desenhado e desenvolvido exclusivamente para mim,
+                      como página pessoal ou portfólio para mostrar meus
+                      projetos e outras informações.
                     </p>
                   </div>
                 </div>
               </a>
-              
+
               <a
                 href="https://github.com/hmarrocos/uikit"
                 target="_blank"
@@ -283,18 +323,16 @@ export default function Home(): JSX.Element {
                   ></img>
                   <div className="flex flex-col py-2">
                     <div className="flex">
-                      <h4 className="text-lg font-medium flex-1">
-                        UI Kit
-                      </h4>
+                      <h4 className="text-lg font-medium flex-1">UI Kit</h4>
                     </div>
                     <p className="text-lg font-light">
-                      Um kit de interface do usuário com um conjunto de 
-                      componentes reutilizáveis, como buttons, inputs, cards, modals, o que você quiser.
+                      Um kit de interface do usuário com um conjunto de
+                      componentes reutilizáveis, como buttons, inputs, cards,
+                      modals, o que você quiser.
                     </p>
                   </div>
                 </div>
               </a>
-              
             </div>
             <div id="contato" className={styles.card}>
               <h2>Contato</h2>
