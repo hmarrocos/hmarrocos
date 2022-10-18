@@ -1,9 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Header from "./header";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 
 export default function Home(): JSX.Element {
@@ -41,22 +41,50 @@ export default function Home(): JSX.Element {
               </p>
 
               <nav className={styles.sections}>
-                <Link href="#sobre">
+                <Link
+                  activeClass="active"
+                  to="sobre"
+                  spy={true}
+                  smooth={true}
+                  offset={-45}
+                  duration={500}
+                >
                   <button className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200">
                     Sobre mim
                   </button>
                 </Link>
-                <Link href="#competencias">
+                <Link
+                  activeClass="active"
+                  to="competencias"
+                  spy={true}
+                  smooth={true}
+                  offset={-45}
+                  duration={500}
+                >
                   <button className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200">
                     Competências
                   </button>
                 </Link>
-                <Link href="#projetos">
+                <Link
+                  activeClass="active"
+                  to="projetos"
+                  spy={true}
+                  smooth={true}
+                  offset={-45}
+                  duration={500}
+                >
                   <button className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200">
                     Projetos
                   </button>
                 </Link>
-                <Link href="#contato">
+                <Link
+                  activeClass="active"
+                  to="contato"
+                  spy={true}
+                  smooth={true}
+                  offset={-45}
+                  duration={500}
+                >
                   <button className="text-center whitespace-nowrap rounded-xl px-4 py-2 font-semibold flex-1 border-2 border-neutral-200">
                     Contato
                   </button>
@@ -87,27 +115,37 @@ export default function Home(): JSX.Element {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full justify-between rounded-lg border-2 bg-black px-4 py-3 text-left text-xl font-medium">
-                        <span>Formação</span>
+                        Formação
                         <ChevronUpIcon
                           className={`${
-                            open
-                              ? "rotate-180 transform transition duration-300"
-                              : "" //!!!
+                            open ? "rotate-180" : "" //!!!
                           } h-7 w-7`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-xl">
-                        <ul className="flex list-disc flex-col pl-6">
-                          <li>
-                            Bacharel em Engenharia de Biossistemas -
-                            Universidade de São Paulo (2020 - 2025)
-                          </li>
-                          <li>
-                            Técnico em Informática - Escola Técnica Estadual de
-                            São Paulo (2017 - 2019)
-                          </li>
-                        </ul>
-                      </Disclosure.Panel>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel
+                          static
+                          className="px-4 pt-4 pb-2 text-xl"
+                        >
+                          <ul className="flex list-disc flex-col pl-6">
+                            <li>
+                              Bacharel em Engenharia de Biossistemas -
+                              Universidade de São Paulo (2020 - 2025)
+                            </li>
+                            <li>
+                              Técnico em Informática - Escola Técnica Estadual
+                              de São Paulo (2017 - 2019)
+                            </li>
+                          </ul>
+                        </Disclosure.Panel>
+                      </Transition>
                     </>
                   )}
                 </Disclosure>
@@ -115,29 +153,38 @@ export default function Home(): JSX.Element {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full justify-between rounded-lg border-2 bg-black px-4 py-3 text-left text-xl font-medium">
-                        <span>Experiência</span>
+                        Experiência
                         <ChevronUpIcon
                           className={`${
-                            open
-                              ? "rotate-180 transform transition duration-300"
-                              : "" //!!!
+                            open ? "rotate-180" : "" //!!!
                           } h-7 w-7`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-xl">
-                        <ul className="flex list-disc flex-col pl-6">
-                          <li>
-                            Gerente de Marketing - Biossistec Jr (jan 2022 -
-                            hoje)
-                          </li>
-                        </ul>
-                      </Disclosure.Panel>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel
+                          static
+                          className="px-4 pt-4 pb-2 text-xl"
+                        >
+                          <ul className="flex list-disc flex-col pl-6">
+                            <li>
+                              Gerente de Marketing - Biossistec Jr (jan 2022 -
+                              hoje)
+                            </li>
+                          </ul>
+                        </Disclosure.Panel>
+                      </Transition>
                     </>
                   )}
                 </Disclosure>
               </div>
             </div>
-
             <div id="competencias" className={styles.card}>
               <h2>Competências</h2>
               <hr className={styles.hr} />
