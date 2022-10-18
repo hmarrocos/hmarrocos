@@ -2,9 +2,10 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Header from "./header";
 import { Link } from "react-scroll";
-
 import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
+import React from "react";
+import BackToTop from "react-back-to-top-button";
 
 export default function Home(): JSX.Element {
   return (
@@ -18,6 +19,28 @@ export default function Home(): JSX.Element {
         </Head>
 
         <main className={styles.main}>
+
+          <BackToTop
+            showAt={100}
+            speed={1}
+            easing="easeInOutSine"
+            style={{
+              textAlign:'center',
+              whiteSpace:'nowrap',
+              borderRadius:'0.75rem',
+              paddingLeft: '1rem',
+              paddingRight: '1rem',
+              paddingTop: '0.5rem',
+              paddingBottom: '0.5rem',
+              fontWeight: '600',
+              fontSize: '1.25rem',
+              flex: '1 1 0%',
+              backgroundColor: '#000000'
+          }}
+          >
+            <span>Voltar ao topo</span>
+          </BackToTop>
+
           <h1 className={styles.title}>Hendriw Marrocos</h1>
 
           <p className={styles.description}>
