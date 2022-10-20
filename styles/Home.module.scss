@@ -87,7 +87,7 @@
 }
 
 .code {
-  background: #e5e5e5;
+  background: #111;
   border-radius: 5px;
   padding: 0.4rem;
   font-size: 1.1rem;
@@ -114,10 +114,5 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+  //test
 }
